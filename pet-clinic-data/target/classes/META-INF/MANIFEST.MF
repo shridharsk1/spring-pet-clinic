@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: petclinicdata
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: shruti
+Implementation-Vendor-Id: doit.sharpenyoursaw.springpetclinic
+Build-Jdk: 1.8.0_191
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/spring-pet-clinic/pet-clinic-data
+Created-By: Maven Integration for Eclipse
+
