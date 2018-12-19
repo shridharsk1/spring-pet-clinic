@@ -1,7 +1,18 @@
 package doit.sharpenyoursaw.springpetclinic.model;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Vet extends Person {
 
-	private static final long serialVersionUID = -9193850562413839368L;
+	private Speciality specialiy;
+
+	public Speciality getSpecialiy() {
+		return specialiy;
+	}
+
+	public void setSpecialiy(Speciality specialiy) {
+		this.specialiy = specialiy;
+	}
 
 }
