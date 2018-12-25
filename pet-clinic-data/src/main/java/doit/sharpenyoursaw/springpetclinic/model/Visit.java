@@ -2,25 +2,32 @@ package doit.sharpenyoursaw.springpetclinic.model;
 
 import java.time.LocalDate;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "visits")
 public class Visit extends BaseEntity {
 
-	private static final long serialVersionUID = -6172690110811655907L;
+	@Column(name = "date")
+	private LocalDate date;
 
-	private LocalDate visitDate;
-
+	@Column(name = "description")
 	private String description;
 
+	@ManyToOne
+	@JoinColumn(name = "pet_id")
 	private Pet pet;
 
-	public LocalDate getVisitDate() {
-		return visitDate;
+	public LocalDate getDate() {
+		return date;
 	}
 
-	public void setVisitDate(LocalDate visitDate) {
-		this.visitDate = visitDate;
+	public void setDate(LocalDate date) {
+		this.date = date;
 	}
 
 	public String getDescription() {

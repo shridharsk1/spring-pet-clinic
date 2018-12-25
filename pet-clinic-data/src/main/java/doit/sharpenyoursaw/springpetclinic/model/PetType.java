@@ -1,17 +1,22 @@
 package doit.sharpenyoursaw.springpetclinic.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "types")
 public class PetType extends BaseEntity {
 
-	private static final long serialVersionUID = 2050293048862525748L;
+	@Column(name = "name")
+	private String name;
 
-	private String petType;
-
-	public String getPetType() {
-		return petType;
+	public String getName() {
+		return name;
 	}
 
-	public void setPetType(String petType) {
-		this.petType = petType;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 }
