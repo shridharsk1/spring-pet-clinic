@@ -11,13 +11,13 @@ import doit.sharpenyoursaw.springpetclinic.services.PetService;
 import doit.sharpenyoursaw.springpetclinic.services.PetTypeService;
 
 @Service
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
+public class OwnerMapService extends AbstractMapService<Owner, Long> implements OwnerService {
 
 	private final PetTypeService petTypeService;
 
 	private final PetService petService;
 
-	public OwnerServiceMap(PetTypeService petTypeService, PetService petService) {
+	public OwnerMapService(PetTypeService petTypeService, PetService petService) {
 		super();
 		this.petTypeService = petTypeService;
 		this.petService = petService;

@@ -3,9 +3,9 @@ package doit.sharpenyoursaw.springpetclinic.services.map;
 import java.util.Set;
 
 import doit.sharpenyoursaw.springpetclinic.model.Speciality;
-import doit.sharpenyoursaw.springpetclinic.services.SpecialitiesService;
+import doit.sharpenyoursaw.springpetclinic.services.SpecialityService;
 
-public class SpecialityServiceMap extends AbstractMapService<Speciality, Long> implements SpecialitiesService {
+public class SpecialityMapService extends AbstractMapService<Speciality, Long> implements SpecialityService {
 
 	public Set<Speciality> findAll() {
 		return super.findAll();
